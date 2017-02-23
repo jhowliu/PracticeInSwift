@@ -4,6 +4,10 @@
    In Swift, Structures are better than classes in many circumtances.
    1. Pass by Value - More safier than mutiple reference to the same instance happens with classes
                     - Less worry about memory leak and multiple thread racing to get/change the same variable
+   
+   Time Complexity
+   1. Insert at the beginning of the array - O(n)
+   2. Adding at the end - O(1)
  
 */
 public struct Stack<T> {
@@ -22,6 +26,7 @@ public struct Stack<T> {
     }
     // if you wanna change the properties, you have to add mutating into your function
     public mutating func pop() -> T? {
+        array.pop
         return array.popLast()
     }
     
