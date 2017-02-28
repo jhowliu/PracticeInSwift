@@ -1,4 +1,12 @@
 //: Playground - noun: a place where people can play
+
+
+/*
+    Time Complexity 
+    1. heapsort : O(NlogN)
+    2. heapify : O(logN)
+    3. search  : O(N)
+*/
 public struct Heap {
     var heap = [Int]()
     
