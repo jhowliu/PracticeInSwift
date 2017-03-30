@@ -16,9 +16,11 @@ func insertionSortOutPlace(_ elements: [Int]) -> [Int] {
     
     for i in 1..<sorted.count {
         let tmp = sorted[i] // create a variable to keep value (out-place)
-        var index = i - 1
-        while index > 0 && sorted[i] < sorted[index] {
-            sorted[index + 1] = sorted[index]
+        
+        var index = i
+       
+        while (index > 0 && tmp < sorted[index-1]) {
+            sorted[index] = sorted[index-1]
             index -= 1
         }
         
